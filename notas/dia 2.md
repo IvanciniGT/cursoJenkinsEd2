@@ -62,3 +62,50 @@ Dinámicas: Implica poner el software en ejecución para hacer la pruebas
         H/A
         UI
         UX
+
+# Lenguajes de programación
+- Lenguajes Compilados -> Traducción de mi carta a CHINO (traductor) -> Carta traducida en chino -> mando al chino
+                          Traducción de mi carta a ALEMAN (traductor) -> Carta traducida en aleman -> mando al aleman
+        C, cobol, C++
+- Lenguajes Interpretados (Mensaje a mi amigo: Jodete y buscate la vida)
+                            Le mando a mi amigo chino la carta en español  < Él contrata a un interprete < En tiempo real 
+                                                                             el interprete lee la carte en español y la promuncia en Chino
+                            Le mando a mi amigo aleman la carta en español < Él contrata a un interprete < En tiempo real 
+                                                                             el interprete lee la carte en español y la promuncia en Aleman
+        Python, JS, sh, basic
+
+JAVA es un lenguaje MUY RARITO!!!
+    Java es compilado + interpretado
+
+# Proyectos JAVA
+    
+    Partimos de ficheros: *.java   (no se entienden por el SO, igual que otros lenguajes: *.c     *.py)
+    Los vamos a compilar: *.class  (byte-code) [javac]
+    Son interpetados en el destino (allá donde instale la app) por un interprete (Máquina virtual de Java: JVM)
+    
+    Un proyecto Java contiene de decenas a miles de archivos .java
+        Esos archivos los compilo > cientos o miles de archivos .class
+    
+    Todos esos archivos .class se meten en un ZIP, al que se le cambia la extensión:
+        .jar    Librerias, scripts  [jar]   |   
+        .war    App web                     |   Resultado de empaquetar un proyecto java
+        .ear    App web... más compleja     |
+    
+    Maven ayuda a automatizar las tareas de compilación, gestión de dependencias y empaquetado de un proyecto JAVA
+    Maven hay que configurarlo para cada proyecto > pom.xml < ESTO LO ESCRIBEN LOS DESARROLLADORES
+    
+    En maven existen lo que denominamos GOALS: Basicamente las tareas que puedo pedir a maven que haga sobre mi proyecto:
+    - compile
+        V
+    - test-compile
+        V
+    - test
+        V
+    - package 
+    
+    Maven además impone una serie de carpetas donde trabajar.
+        El código JAVA lo tendremos dentro de una carpeta llamada       src/main
+        Las pruebas automatizadas las tendremos en una carpeta llamada  src/test
+        Cuando maven compile un proyecto, el resultado lo guardará en   target/classes (me da igual)
+        Cuando a maven le pido que ejecute las pruebas de un proyecto.  target/surefire-reports/*.xml   IMPORTANTE PARA NOSOTROS
+        El resultado de empaquetar el proyecto se depositará en         target                          MUY IMPORTANTE
