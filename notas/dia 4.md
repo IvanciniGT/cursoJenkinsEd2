@@ -35,7 +35,10 @@ docker run -d --name misonarqube -p 8081:9000 sonarqube:8.9.6-community
 
 MAVEN se integra automaticamente con SONARQUBE
 
-mvn sonar:sonar -Dsonar.projectKey=proyectoMaven -Dsonar.host.url=http://172.31.7.239:8081 -Dsonar.login=6b674b3412bf8d985f3d3c0536c8ae05fa256efe
+mvn sonar:sonar \
+    -Dsonar.projectKey=proyectoMaven \
+    -Dsonar.host.url=http://172.31.7.239:8081 \
+    -Dsonar.login=6b674b3412bf8d985f3d3c0536c8ae05fa256efe
 
 
 JAVA : Definir la variable "numero de empleados".  CAMEL CASE: variables, metodos
