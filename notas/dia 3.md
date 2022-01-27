@@ -92,4 +92,47 @@ cvs > svn > git
                             Atlassian: JIRA, CONFLUENCE
                             
                             
-                            
+TRISTE PROYECTO JAVA gestionado con MAVEN en nustro PC
+Y lo hemos metido en un repo de GIT: https://github.com/IvanciniGT/proyectoMaven.git
+
+En la carpeta del proyecto
+    Crear el repo:  
+        $ git init
+    Crear un .gitignore con los archivos que no quiero que se añadan (en nuestro caso la carpeta target)
+        $ echo "/target/" >> .gitignore
+    Añadir a git los archivos que si me interesan
+        $ git add .
+    Creamos una instantanea del proyecto (confirmación de cambios, commit)
+        $ git commit -m 'MENSAJE'
+    Hemos creado un repo remoto en github
+    Hemos creado un token de acceso a github en github
+    Hemos configurado en nuestro PC que nos guarde los datos de acceso a github para que los pida siempre 
+        (SOLO UNA VEZ en el equipo)
+        $ git config --global credential.helper store
+    Hemos vinculado el repo nuevo remoto a nuestro repo en local
+        $ git remote add <NOMBRE-REPO-REMOTO> <URL-REPO-REMOTO-EN-GITHUB>
+    Mandar nuestra instantanea a github (al remoto)
+        $ git push --set-upstream <NOMBRE-REPO-REMOTO> <RAMA>
+
+TODO ESO LO HARIA LA PRIMERA VEZ QUE TRABAJO EN EL PROYECTO
+A partir de ahi? Cuando haya un nuevo cambio?
+    Pedir a git que controle el nuevo cambio
+        $ git add .
+    Nuevo commit
+        $ git commit -m 'MENSAJE'
+    Mandarlo al remoto
+        $ git push
+
+
+Tenemos ya por fin nuestro proyecto de JAVA + MAVEN en GITHUB
+# TODO: Queremos automatizar la compilación, pruebas y empaquetado de nuestro proyecto en JENKINS
+# TODO: Montar un flujo de Integración continua para nuestro proyecto JAVA+MAVEN usando Jenkins con servidor de CI/CD
+
+Windows 2 shell:
+    cmd Consola de comandos
+    powershell
+La shell
+/bin/sh UNIX < Linux
+
+Test Driven Development
+Requisitos -> Diseñarlas y automatizar las Pruebas -> Desarrollo

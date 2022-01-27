@@ -70,13 +70,15 @@ Antes usábamos metodologías en cascada (waterfall): V, espiral...
                     Ansible: Automatizar el aprovisionamiento y configuración de entornos  + Puppet, Chef
                     Terraform
                         
-    ### Integración Continua
+    ### Integración Continua CI
         Tengo mi software (su ultima version) continuamente en el entorno de INTEGRACION sometido a pruebas automatizadas
-    ### Entrega Continua
+    ### Entrega Continua CD
         Poner en manos de mi cliente automatizadamente la última versión de mi software
-    ### Despliegue continuo
+    ### Despliegue continuo CD
         Instalar a mi cliente en producción la última versión en automático (solo porque el desarrollador ha dicho, esto está!)
 
+    CI Continuous integration
+    CD Continuous Delivery y Continuous Deployment
 ## Clouds
     ¿Qué es un cloud? Conjunto de servicios IT que una empresa ofrece a través de Internet de forma "automatizada"
         AWS:    Cloud amazon ****
